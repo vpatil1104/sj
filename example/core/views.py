@@ -14,5 +14,14 @@ def contact(request):
         usertype = request.POST.get('usertype')
         contact=Contact(name=name,password=password,usertype=usertype,date=datetime.today())
         contact.save()
+        
+    elif request.method =='POST':
+        name = request.POST.get('name')
+        password = request.POST.get('password')
+       
+        contact=Contact(name=name,password=password,date=datetime.today())
+        contact.save()
     return render(request,'contact.html')
     #return HttpResponse("th
+def Home(request):
+    return render(request,'Home.html')
