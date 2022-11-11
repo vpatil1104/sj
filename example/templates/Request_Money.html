@@ -11,15 +11,24 @@
   <body class="p-3 m-0 border-0 bd-example">
 <main class="form-signin w-100 m-auto">
     <!-- Example Code -->
-  <h1>Home </h1>
+  <h1>Request Money</h1>
 
-  <h2>Logged in User Name</h2>
+  <p>Select a user and specify amount you want to request from them.</p>
 
-    <a href="wallect" class="link-primary">Wallet</a><br>
-    <a href="send_money" class="link-secondary">Send Money</a><br>
-    <a href="request_money" class="link-success">Request Money</a><br>
-    <a href="request_recived" class="link-danger">Request Recived</a><br>
-    <a href="logout" class="link-warning">Logout</a><br>
+  <div class="form-floating mb-3">
+    <input type="Select User" class="form-control" id="floatingInput" placeholder="Select User">
+    <label for="floatingInput">Select User</label>
+  </div>
+  <div class="form-floating">
+    <input type="amount" class="form-control" id="floatingInput" placeholder="Amount">
+    <label for="floatingInput">Amount</label>
+  <br>
+  </div>
+    <div class="mb-3">
+      <button class="btn btn-primary" type="submit" disabled>Request Money</button>
+    </div>
+  </form>
+
     
   
     

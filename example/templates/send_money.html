@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+<main class="form-signin w-100 m-auto">
+
+  
+
+  <form method = "POST" action="send_money">
+    {% csrf_token %}
+    <!-- Example Code -->
+  <h1>Send Money</h1>
+  <p>Select a user and specify amount to send</p>
+  <div class="form-floating mb-3">
+    <input type="Select User" class="form-control" id="floatingInput" placeholder="Select User">
+    <label for="floatingInput">Select User</label>
+  </div>
+  <div class="form-floating">
+    <input type="Amount" class="form-control" id="floatingInput" placeholder="Amount">
+    <label for="floatingInput">Amount</label>
+  <br>
+  </div>
+    <div class="mb-3">
+      <button class="btn btn-primary" type="Send Money">Send Money</button>
+    </div>
+  </form>
+
+  </body>
+</html>
